@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-void average(int count, ...) {
+int average(int count, ...) {
   va_list args;
   va_start (args, count);
   int sum = ;
