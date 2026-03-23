@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-void my_sum(char type. int count, ...) {
+void my_sum(char type, int count, ...) {
   va_list ap;
   va_start(ap, count);
 
