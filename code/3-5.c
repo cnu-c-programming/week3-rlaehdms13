@@ -9,17 +9,20 @@ void my_sum(char type, int count, ...) {
     for(int i = 0; i < count; i++) {
       printf("%s%s", va_arg(ap, char *), (i == count - 1) ? "" : " ");
     }
+    printf("\n");
   }
   else if (type == 'C') {
     for(int i = 0; i < count; i++){
       printf("%c", va_arg(ap, int));
     }
+    printf("\n");
   }
   else if(type == 'D') {
     int sum = 0;
     for(int i = 0; i < count; i++){
       sum += va_arg(ap, int);
     }
+    printf("%d\n", sum);
   }
   va_end(ap);
 }
