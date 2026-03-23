@@ -4,7 +4,7 @@
 int average(int count, ...) {
   va_list args;
   va_start (args, count);
-  int sum = ;
+  int sum = 0;
   for(int i = 0; i < count; i++){
     sum += va_arg(args, int);
   }
