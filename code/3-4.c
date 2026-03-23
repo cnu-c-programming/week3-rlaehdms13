@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-int max_of(count,...) {
+int max_of(int count,...) {
   va_list args;
   va_start(args, count);
   int max = 0;
